@@ -1,5 +1,4 @@
 import React from 'react'
-import HeaderImg from '../svgs/HeaderImg'
 import styles from './Header.module.css'
 
 
@@ -13,7 +12,7 @@ const Header = () => {
                 <a href="#">Get Started</a>
             </div>
             <div className={styles.headerImg}>
-                <HeaderImg />
+                <img src="../../src/img/illustration-working.svg" alt="" />
             </div>
         </div>
     </section>

@@ -2,7 +2,7 @@
     display: flex;
     padding-top: 80px;
     position: relative;
-    gap: 80px;
+    gap: 60px;
     align-items: center;
 }
 
@@ -48,7 +48,7 @@
     width: max-content;
 }
 
-.headerImg svg{
+.headerImg img{
     width: 164%;
     max-width: fit-content;
     display: block;
@@ -56,4 +56,41 @@
 
 .hidden{
     overflow-x: hidden;
+}
+
+
+@media (max-width: 999px){
+    .headerCont {
+        flex-direction: column-reverse;
+    }
+
+    .headerImg img {
+        max-width: 100%;
+        min-width: 380px;
+        position: relative;
+        left: 80px;
+    }
+
+    .headerInfo h1 {
+        font-size: 2.625rem;
+        letter-spacing: -1.05px;
+        line-height: 1.1;
+        text-align: center;
+    }
+
+    .headerInfo p {
+        font-size: 1.125rem;
+        text-align: center;
+    }
+
+    .headerInfo a{
+        margin: 0 auto;
+        display: block;
+        width: max-content;
+    }
+
+    .headerImg {
+        width: initial;
+    }
+
 }

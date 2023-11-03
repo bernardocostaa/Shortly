@@ -27,6 +27,7 @@ export const Menu = () => {
             <a className={styles.btnSing} href="#">Sign Up</a>
           </li>
         </ul>
+        <button className={styles.btnMobile}></button>
     </nav>
   )
 }
