@@ -1,0 +1,50 @@
+.menuCont{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+    align-items: center;
+}
+
+.menuPrin{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.menuCont a{
+    font-size: 0.9375rem;
+    color: var(--GrayishViolet);
+    font-weight: bold;
+    transition: 0.3s all;
+}
+
+.menuCont a:hover{
+    color: var(--VeryDarkBlue);
+}
+
+
+.ulPrin{
+    display: flex;
+}
+
+.ulPrin li a , .ulSingLogin .login {
+    padding: 15px;
+}
+
+.ulSingLogin {
+    display: flex;
+    gap: 35px;
+}
+
+.ulSingLogin .btnSing {
+    border-radius: 28px;
+    background: var(--Cyan);
+    color: white;
+    padding: 9px 24px;
+    transition: 0.3s all;
+}
+
+.ulSingLogin .btnSing:hover {
+    color: white;
+    background: #9AE3E3;
+}
