@@ -1,0 +1,53 @@
+.bgBoost {
+    background: var(--DarkViolet);
+}
+
+.boostCont {
+    text-align: center;
+}
+
+.imgFundo {
+    background: url('../../src/img/bg-boost-desktop.svg') no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.boostCont h1{
+    color: #fff;
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    margin-bottom: 32px;
+}
+
+.boostCont a{
+    border-radius: 28px;
+    background: var(--Cyan);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: block;
+    width: max-content;
+    padding: 12px 40px;
+    transition: 0.3s all;
+    margin: 0 auto;
+}
+
+.boostCont a:hover{
+    background: #9AE3E3;
+}
+
+@media (max-width: 999px){
+    .imgFundo {
+        background: url('../../src/img/bg-boost-mobile.svg') no-repeat;
+        background-size: cover;
+        padding: 80px 0;
+    }
+
+    .boostCont h1 {
+        font-size: 1.75rem;
+    }
+
+}

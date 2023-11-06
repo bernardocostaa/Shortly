@@ -4,6 +4,7 @@ import { Menu } from './menu/Menu';
 import Header from './header/Header';
 import ShortemCard from './shortenCard/ShortemCard';
 import Advanced from './advanced/Advanced';
+import Boost from './boost/Boost';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
     <main className='bg-color'>
       <ShortemCard />
       <Advanced />
+      <Boost />
     </main>
     </>
   )
