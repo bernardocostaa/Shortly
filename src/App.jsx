@@ -5,6 +5,7 @@ import Header from './header/Header';
 import ShortemCard from './shortenCard/ShortemCard';
 import Advanced from './advanced/Advanced';
 import Boost from './boost/Boost';
+import Footer from './footer/Footer';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Advanced />
       <Boost />
     </main>
+    <Footer />
     </>
   )
 };
