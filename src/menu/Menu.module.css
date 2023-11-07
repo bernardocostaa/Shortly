@@ -44,6 +44,15 @@
   transition: 0.3s all;
 }
 
+.btnloginMobile{
+  display: block;
+  border-radius: 28px;
+  background: var(--Cyan);
+  color: white;
+  padding: 9px 24px;
+  transition: 0.3s all;
+}
+
 .ulSingLogin .btnSing:hover {
   color: white;
   background: #9ae3e3;
@@ -72,7 +81,10 @@
   box-shadow: 0 10px #9e9aa8, 0 -10px #9e9aa8;
   transition: 0.3s all;
   cursor: pointer;
+}
 
+.ulMobile{
+  display: none;
 }
 
 @media (max-width: 999px) {
@@ -84,5 +96,42 @@
   .btnMobile {
     display: flex;
     position: relative;
+  }
+  .ativoMobile.btnMobile::before{
+    box-shadow: 0 10px #2acfcf, 0 -10px #2acfcf;
+    background: #2acfcf;
+  }
+  .ulMobile{
+    background: var(--DarkViolet);
+    position: absolute;
+    border-radius: 10px;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    top: 100px;
+    padding: 40px;
+    z-index: 9999;
+    display: block;
+    animation: animaLeft forwards .5s;
+  }
+
+  .ulMobile li a {
+    color: white;
+  }
+  
+  .menup1 {
+    padding-bottom: 30px;
+  }
+}
+
+
+@keyframes animaLeft{
+  from {
+    top: 0px;
+  }
+
+  to {
+    top: 100px;
   }
 }
