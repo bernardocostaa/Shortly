@@ -1,0 +1,21 @@
+.cardLink{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 18px 32px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.cardLink p{
+    font-size: 1.25rem;
+}
+
+.shortlink{
+    display: flex;
+    gap: 24px;
+}
+
+.short{
+ color: var(--Cyan);
+}

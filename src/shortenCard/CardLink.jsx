@@ -1,13 +1,12 @@
-// CardLink.jsx
 import React from 'react';
+import styles from './CardLink.module.css'
 
-const CardLink = ({ urlInput, data }) => {
-  console.log(urlInput,data);
+const CardLink = ({ long, short }) => {
   return (
-    <div>
-      <p>{urlInput}</p>
-      <div>
-        <p>{data}</p>
+    <div className={`container ${styles.cardLink}`}>
+      <p>{long}</p>
+      <div className={styles.shortlink}>
+        <p className={styles.short}>{short}</p>
         <button>Copy</button>
       </div>
     </div>
