@@ -17,8 +17,20 @@
 
 .areaInput{
     padding: 52px 64px;
+    position: relative;
     display: flex;
     gap: 24px;
+    letter-spacing: 0.109px;
+    line-height: 1.2;
+}
+
+.error{
+    color: var(--Red);
+    position: absolute;
+    font-size: 1rem;
+    bottom: 32px;
+    left: 70px;
+
 }
 
 .areaInput input{
@@ -51,12 +63,20 @@
     background: #9AE3E3;
 }
 
+.areaInput button:disabled{
+    opacity: 0.5;
+    cursor: wait;
+  }
 
 @media (max-width: 999px){
     .areaInput{
         flex-direction: column;
         padding: 24px;
         gap: 1rem;
+    }
+    .error{
+        bottom: 85px;
+        left: 30px;
     }
 
     .areaInput button{
@@ -69,6 +89,7 @@
         font-size: 1rem;
         padding-top: 9px;
         padding-bottom: 10px;
+        margin-bottom: 20px;
     }
     .shorten {
        margin: 70px 24px 0px 24px;

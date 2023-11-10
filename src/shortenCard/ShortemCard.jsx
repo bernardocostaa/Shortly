@@ -1,31 +1,33 @@
 import React from "react";
 import styles from "./ShortemCard.module.css";
+import Fetch from "../Fetch";
 
-const ShortemCard = () => {
+
+const ShortemCard = ({onShorten}) => {
   const [urlInput, setUrlInput] = React.useState("");
+  const {data,error,linkValido,loading,request} = Fetch()
 
   function ShortenURL(event){
     event.preventDefault()
-    console.log('oii');
+    ApiURL()
   }
 
-  const myHeaders = new Headers();
-  myHeaders.append("apikey", "PaMTyPxShgi8MUkllPd11y4sPNlQBQ5S");
+  async function ApiURL(){
+    const myHeaders = new Headers();
+    myHeaders.append("apikey", "PaMTyPxShgi8MUkllPd11y4sPNlQBQ5S");
+    const raw = urlInput;
 
-  const raw = urlInput;
-
-  const requestOptions = {
-    method: "POST",
-    redirect: "follow",
-    headers: myHeaders,
-    body: raw,
-  };
-
-  fetch("https://api.apilayer.com/short_url/hash", requestOptions)
-    .then((response) => response.text())
-    .then((result) => console.log(result))
-    .catch((error) => console.log("error", error));
-  console.log(urlInput);
+    const requestOptions = {
+      method: "POST",
+      redirect: "follow",
+      headers: myHeaders,
+      body: raw,
+    };
+    request("https://api.apilayer.com/short_url/hash", requestOptions)
+    console.log(urlInput);
+    console.log(data && data);
+   await onShorten(urlInput,data)
+  }
 
   return (
     <section className={`container ${styles.shorten}`}>
@@ -34,10 +36,16 @@ const ShortemCard = () => {
           <input
             type="text"
             value={urlInput}
+            name="url"
             onChange={(event) => setUrlInput(event.target.value)}
             placeholder="Shorten a link here..."
           />
+          {linkValido && <p className={styles.error}>Please add a link</p>}
+          {loading ? (
+          <button disabled>Loading...</button>
+          ): (
           <button onClick={ShortenURL}>Shorten It!</button>
+          )}
         </form>
       </div>
     </section>

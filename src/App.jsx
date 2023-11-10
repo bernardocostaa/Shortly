@@ -6,6 +6,8 @@ import ShortemCard from './shortenCard/ShortemCard';
 import Advanced from './advanced/Advanced';
 import Boost from './boost/Boost';
 import Footer from './footer/Footer';
+import CardLink from './shortenCard/CardLink';
+import ParentComponent from './shortenCard/ParentComponent';
 
 const App = () => {
   return (
@@ -15,7 +17,7 @@ const App = () => {
       <Header />
     </header>
     <main className='bg-color'>
-      <ShortemCard />
+     <ParentComponent />
       <Advanced />
       <Boost />
     </main>
