@@ -12,7 +12,7 @@ const Header = () => {
                 <a href="#">Get Started</a>
             </div>
             <div className={styles.headerImg}>
-                <img src="../../../src/img/illustration-working.svg" alt="trabalho imagem" />
+                <img src="/dist/assets/bg-shorten-desktop-d119628f.svg" alt="trabalho imagem" />
             </div>
         </div>
     </section>
