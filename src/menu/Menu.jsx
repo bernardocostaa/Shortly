@@ -5,8 +5,27 @@ import { Logo } from "../svgs/Logo";
 export const Menu = () => {
   const [mobileMenu, setMobileMenu] = React.useState();
 
+  const menuRef = React.useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setMobileMenu(false);
+    }
+    console.log(menuRef.current);
+    console.log(event.target);
+    console.log(!menuRef.current.contains(event.target));
+  };
+
+ React.useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
+
   return (
-    <nav className={`container ${styles.menuCont}`}>
+    <nav className={`container ${styles.menuCont}`} ref={menuRef}>
       <div className={styles.menuPrin}>
         <a href="#">
           <Logo />

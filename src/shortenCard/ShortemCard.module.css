@@ -97,7 +97,7 @@
 
     .bgImg {
         border-radius: 10px;
-        background: url('../img/bg-shorten-mobile.svg') no-repeat;
+        background: url('../assets/bg-shorten-mobile.svg') no-repeat;
         background-size: cover;
     }
 }
