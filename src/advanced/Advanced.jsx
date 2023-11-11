@@ -1,5 +1,8 @@
 import React from "react";
 import styles from "./Advanced.module.css";
+import recognition from "../assets/icon-brand-recognition.svg";
+import records from "../assets/icon-detailed-records.svg";
+import customizable from "../assets/icon-fully-customizable.svg";
 
 const Advanced = () => {
   return (
@@ -14,7 +17,7 @@ const Advanced = () => {
       <div className={styles.contCard}>
         <div className={styles.card}>
           <div className={styles.advancedDivImg}>
-            <img src="../../src/assets/icon-brand-recognition.svg" alt="" />
+            <img src={recognition} alt="" />
           </div>
           <h3>Brand Recognition</h3>
           <p>
@@ -24,7 +27,7 @@ const Advanced = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.advancedDivImg}>
-            <img src="../../src/assets/icon-detailed-records.svg" alt="" />
+            <img src={records} alt="" />
           </div>
           <h3>Detailed Records</h3>
           <p>
@@ -34,7 +37,7 @@ const Advanced = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.advancedDivImg}>
-            <img src="../../src/assets/icon-fully-customizable.svg" alt="" />
+            <img src={customizable} alt="" />
           </div>
           <h3>Fully Customizable</h3>
           <p>

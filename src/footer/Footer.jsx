@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import logoFooter from "../assets/logoFooter.svg"
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
       <div className={`${styles.footerCont} container`}>
         <div>
           <a href="#">
-            <img src="../../src/assets/logoFooter.svg" alt="" />
+            <img src={logoFooter} alt="" />
           </a>
         </div>
         <div className={styles.contList}>
