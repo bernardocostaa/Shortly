@@ -11,7 +11,6 @@ const ShortemCard = ({ onShorten }) => {
     if (data && data !== prevData) {
       onShorten(data);
       setPrevData(data);
-      console.log(prevData, 'dddd');
     }
   }, [data, onShorten, prevData]);
 
@@ -30,6 +29,7 @@ const ShortemCard = ({ onShorten }) => {
     };
 
     await request("https://api.apilayer.com/short_url/hash", requestOptions);
+    setUrlInput('')
   }
 
   return (

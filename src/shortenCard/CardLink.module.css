@@ -4,6 +4,7 @@
     background: #fff;
     padding: 18px 32px;
     border-radius: 5px;
+    align-items: center;
     margin-bottom: 1rem;
 }
 
@@ -14,8 +15,61 @@
 .shortlink{
     display: flex;
     gap: 24px;
+    align-items: center;
 }
 
 .short{
  color: var(--Cyan);
+}
+
+.btnCopy{
+    background: var(--Cyan);
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s all ;
+}
+
+.btnCopied{
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s all ;
+    background: var(--DarkViolet);
+}
+.btnCopy:hover{
+    background: #9AE3E3;
+}
+
+.resetpd{
+    margin-top: -40px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+@media(max-width:999px){
+    .cardLink,.shortlink{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cardLink p{
+        font-size: 1rem;
+    }
+
+    .shortlink{
+        gap: 8px;
+    }
+
+    .cardLink{
+        align-items: start;
+    }
+
+    .long{
+        margin-bottom: 14px;
+    }
 }

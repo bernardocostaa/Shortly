@@ -27,7 +27,7 @@ const Fetch = () => {
       setError(error);
     } finally {
       setLoading(false);
-      setData(json)
+      json = null
       return { response, json };
     }
   };
