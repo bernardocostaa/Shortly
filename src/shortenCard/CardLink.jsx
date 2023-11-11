@@ -17,6 +17,7 @@ const CardLink = ({ long, short }) => {
     <div className={`container ${styles.resetpd}`}>
       <div className={` ${styles.cardLink}`}>
         <p className={styles.long}>{long}</p>
+          <div className={styles.line}></div>
         <div className={styles.shortlink}>
           <p className={styles.short}>{short}</p>
           <button onClick={copyUrl} className={copy ? styles.btnCopied : styles.btnCopy}>{copy ? 'Copied!' : 'Copy'}</button>

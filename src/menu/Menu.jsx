@@ -51,6 +51,7 @@ export const Menu = () => {
           <li className={styles.menup1}>
             <a href="#">Resources</a>
           </li>
+          <div className={styles.lineMenu}></div>
           <li className={styles.menup1}>
           <a className={styles.login} href="#">
             Login
