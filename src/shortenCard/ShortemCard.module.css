@@ -10,7 +10,7 @@
 
 .bgImg{
     border-radius: 10px;
-    background: url('../img/bg-shorten-desktop.svg') no-repeat;
+    background: url('../assets/bg-shorten-desktop.svg') no-repeat;
     background-size: cover;
 }
 
