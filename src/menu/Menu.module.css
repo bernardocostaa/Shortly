@@ -119,6 +119,10 @@
   .ulMobile li a {
     color: white;
   }
+  .ulMobile li a:hover {
+    color: rgb(209, 209, 209) !important;
+  }
+  
   
   .menup1 {
     padding-bottom: 30px;
