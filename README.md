@@ -52,7 +52,7 @@ Link do Projeto: [Shortly](https://shorteninghs11.netlify.app/)
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/bernardocostaa/Countries-of-the-world/blob/main/LICENSE) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/bernardocostaa/Shortly/blob/main/LICENSE) para mais detalhes.
 
 ---
 
