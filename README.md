@@ -3,12 +3,12 @@
 </h1>
 
 <p align="center">
-  <img alt="" src="https://github.com/bernardocostaa/Countries-of-the-world/blob/main/templete.jpg" width="100%">
+  <img alt="" src="https://raw.githubusercontent.com/bernardocostaa/Shortly/main/templete.jpg" width="100%">
 </p>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a target="_blank" href="https://bernardocostaa-rest-countries.netlify.app/">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a target="_blank" href="https://shorteninghs11.netlify.app/">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 <br>
@@ -47,7 +47,7 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 
 ## 🚧 Projeto:
 
-Link do Projeto: [Dogs](https://bernardocostaa-rest-countries.netlify.app/)
+Link do Projeto: [Shortly](https://shorteninghs11.netlify.app/)
 
 
 ## :memo: Licença
