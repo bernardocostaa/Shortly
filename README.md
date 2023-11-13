@@ -1,5 +1,5 @@
 <h1 align="center">
-  Countries of the World
+ Shortly
 </h1>
 
 <p align="center">
