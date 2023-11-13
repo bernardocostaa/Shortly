@@ -18,7 +18,7 @@
 Executar para clonar o projeto:
 
 ```bash
-git clone https://github.com/bernardocostaa/Countries-of-the-world.git
+git clone https://github.com/bernardocostaa/Shortly.git
 ```
 
 Entrar na pasta usando cd e executar para instalar as dependências necessárias:
